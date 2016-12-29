@@ -174,10 +174,10 @@ Slider navigation
 }
 .cd-slider-navigation a {
   display: block;
-  position: top;
+  position: relative;
   height: 40px;
   width: 40px;
-  background: url(../img/cd-icon-navigation.svg) no-repeat -10px -10px;
+  background: url(../img/cd-icon-navigation.svg) no-repeat -100px -10px;
   border-radius: 50%;
   background-color: #262626; /* BOJA DUGMICA */
 }
