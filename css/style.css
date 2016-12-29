@@ -42,7 +42,7 @@ Slider
 }
 
 .cd-slider > li {
-  position: top;
+  position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
@@ -174,7 +174,7 @@ Slider navigation
 }
 .cd-slider-navigation a {
   display: block;
-  position: relative;
+  position: top;
   height: 40px;
   width: 40px;
   background: url(../img/cd-icon-navigation.svg) no-repeat -10px -10px;
