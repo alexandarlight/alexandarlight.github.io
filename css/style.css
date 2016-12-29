@@ -33,7 +33,8 @@ Slider
   width: 100%;
   height: 100vh;
   /* hide horizontal scrollbar on IE11 */
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .cd-slider-wrapper .cd-slider, .cd-slider-wrapper .cd-slider > li {
   height: 100%;
