@@ -311,7 +311,7 @@ svg cover layer
   top: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
+  opacity: 10;
 }
 .cd-svg-cover path {
   fill: #000000; /* BOJA PRELAZA */
