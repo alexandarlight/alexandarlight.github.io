@@ -218,6 +218,9 @@ Slider navigation
 .cd-slider-navigation li.selected:nth-of-type(4) a {
   background-position: -190px -70px;
 }
+.cd-slider-navigation li:nth-of-type(5) a {
+  background-position: -190px -10px;
+}
 .cd-slider-navigation li.selected:nth-of-type(5) a {
   background-position: -190px -70px;
 }
@@ -311,7 +314,7 @@ svg cover layer
   top: 0;
   height: 100%;
   width: 100%;
-  opacity: 90%;
+  opacity: 0;
 }
 .cd-svg-cover path {
   fill: #000000; /* BOJA PRELAZA */
