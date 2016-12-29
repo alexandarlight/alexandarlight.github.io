@@ -149,7 +149,7 @@ Slider navigation
 .cd-slider-navigation {
   position: absolute;
   bottom: 50px;
-  left: 50%;
+  left: 500%;
   right: auto;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -175,7 +175,7 @@ Slider navigation
 .cd-slider-navigation a {
   display: block;
   position: relative;
-  height: 400px;
+  height: 40px;
   width: 40px;
   background: url(../img/cd-icon-navigation.svg) no-repeat -10px -10px;
   border-radius: 50%;
