@@ -94,6 +94,11 @@ Slider
 		background-image: url(../img/img-4.jpg);
 	}
 
+	&:nth-of-type(5) {
+		background-color: $color-5;
+		background-image: url(../img/img-4.jpg);
+	}
+
 	&:first-of-type, &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
 		background-size: cover; 
 	}
@@ -247,6 +252,15 @@ Slider navigation
 		background-position: -190px -70px;
 	}
 
+	li:nth-of-type(5) a {
+		background-position: -250px -10px;
+	}
+
+	li.selected:nth-of-type(5) a {
+		background-position: -250px -70px;
+	}
+
+
 	em {
 		/* tooltip visible on hover */
 		position: absolute;
@@ -315,6 +329,14 @@ Slider navigation
 
 		li.selected:nth-of-type(4) a {
 			background-position: -180px -60px;
+		}
+
+		li:nth-of-type(5) a {
+			background-position: -240px 0;
+		}
+
+		li.selected:nth-of-type(5) a {
+			background-position: -240px -60px;
 		}
 	}
 }
