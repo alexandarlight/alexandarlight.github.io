@@ -195,7 +195,7 @@ Slider navigation
 }
 .cd-slider-navigation li.selected:first-of-type a {
   /* change custom icon using image sprites */
-  background-position: -80px -70px;
+  background-position: -10px -70px;
 }
 .cd-slider-navigation li:nth-of-type(2) a {
   background-position: -70px -10px;
