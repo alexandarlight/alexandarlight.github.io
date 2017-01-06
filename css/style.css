@@ -226,7 +226,7 @@ Slider navigation
   background-position: -250px -10px;
 }
 .cd-slider-navigation li.selected:nth-of-type(5) a {
-  background-position: -250px -70px;
+  background-position: -2950px -70px;
 }
 .cd-slider-navigation em {
   /* tooltip visible on hover */
