@@ -155,7 +155,7 @@ Slider navigation
 -------------------------------- */
 .cd-slider-navigation {
   position: absolute;
-  bottom: 20px;
+  top: 50px;
   left: 50%;
   right: auto;
   -webkit-transform: translateX(-50%);
