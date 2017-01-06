@@ -174,7 +174,7 @@ Slider navigation
 }
 .cd-slider-navigation li {
   display: inline-block;
-  margin-right: 60px;
+  margin-right: 20%;
 }
 .cd-slider-navigation li:last-of-type {
   margin-right: 0;
