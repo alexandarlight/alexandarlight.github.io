@@ -51,7 +51,7 @@ Slider
   opacity: 0;
   /* used to vertically center its content */
   display: table;
-  background-position: center center;
+  background-position: bottom;
   background-repeat: no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
