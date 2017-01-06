@@ -138,7 +138,7 @@ Slider
 }
 @media only screen and (min-width: 1170px) {
   .cd-slider > li h2, .cd-slider > li p {
-    margin-bottom: 20px;
+    margin-bottom: 3px;
   }
   .cd-slider > li h2 {
     font-size: 3.2em;
