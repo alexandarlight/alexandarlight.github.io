@@ -1,8 +1,8 @@
 
 <?php
 
-	if (file_exists("site.html")) {
-		$fp = fopen("site.html","r");
+	if (file_exists("index.html")) {
+		$fp = fopen("index.html","r");
 		while (!feof($fp)) {
 			$line = fgets($fp, 2048);
 			echo $line . "<br>";
