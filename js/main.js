@@ -4,7 +4,7 @@ jQuery(document).ready(function(){
 		http://stackoverflow.com/questions/25265197/how-to-convert-a-cubic-bezier-value-to-a-custom-mina-easing-snap-svg
 	*/
 	var duration = 100,
-		delay = 100,
+		delay = 50,
 		epsilon = (1000 / 60 / duration) / 4,
 		firstCustomMinaAnimation = bezier(.42,.03,.77,.63, epsilon),
 		secondCustomMinaAnimation = bezier(.27,.5,.6,.99, epsilon);
