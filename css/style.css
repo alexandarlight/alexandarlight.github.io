@@ -267,7 +267,7 @@ Slider navigation
   border: 5px solid transparent;
   border-top-color: rgba(0, 0, 0, 0.7);
 }
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 2170px) {
   .cd-slider-navigation a {
     height: 60px;
     width: 60px;
