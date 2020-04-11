@@ -120,7 +120,7 @@ a {
     cursor: pointer;
     vertical-align: baseline;
     text-decoration: none;
-    color: #F8F8F8;
+    color: #000;
     background: 0 0
 }
 
@@ -177,7 +177,7 @@ select {
 }
 
 .font-white {
-    color: #F8F8F8
+    color: #fff
 }
 
 .font-small {
@@ -199,7 +199,7 @@ select {
 .page-about .txt-wrap .mail p,
 .project-ttl .ttl em,
 .projects .project .img .sp-ttl {
-    font-family: 'Noe Display Regular';
+    font-family: freight-text-pro, serif;
     font-weight: 100;
     font-style: italic
 }
@@ -235,13 +235,13 @@ html {
 }
 
 body {
-    font-family: usual, 'Interregular', sans-serif;
+    font-family: usual, 'Yu Gothic', sans-serif;
     font-size: 62.5%;
     overflow: hidden;
     width: 100%;
     min-height: 100%;
-    color: #F8F8F8;
-    background: #000;
+    color: #000;
+    background: #f4f4f4;
     -webkit-font-smoothing: antialiased
 }
 
@@ -359,7 +359,6 @@ body {
 }
 
 #fv h2 {
-    font-family: 'Noe Display Regular';
     position: relative;
     float: left;
     overflow: hidden;
@@ -377,20 +376,10 @@ body {
     position: relative;
     float: left;
     width: 62%;
-    margin: 15% 0 0 18%  /* top je bilo 35 */
-}
-
-#fv .profile .txt00 {  /* Let's talk header!   */
-    font-family: 'Noe Display'; 
-    font-size: 14rem;
-    font-weight: 600;
-    line-height: 1.1;
-    margin-bottom: 5%;
-    letter-spacing: 1px;
+    margin: 35% 0 0 18%
 }
 
 #fv .profile .txt01 {
-    font-family: 'Interregular';
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.6;
@@ -399,12 +388,9 @@ body {
 }
 
 #fv .profile .txt02 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 2;
-    letter-spacing: .8px;
-    color: #9699A5;
-    margin-bottom: 2rem;
-    width: 60%;
+    letter-spacing: .8px
 }
 
 #fv .profile .txt02 a {
@@ -501,7 +487,7 @@ body {
 }
 
 .nav-right.is-white a {
-    color: #f8f8f8
+    color: #fff
 }
 
 .nav-right a {
@@ -543,7 +529,7 @@ body {
 }
 
 .nav-back.is-white {
-    color: #f8f8f8
+    color: #fff
 }
 
 .nav-back:before {
@@ -593,7 +579,7 @@ body {
     z-index: 100;
     letter-spacing: 5px;
     pointer-events: none!important;
-    color: #f8f8f8
+    color: #fff
 }
 
 #js-cusor {
@@ -625,7 +611,7 @@ body {
     letter-spacing: 2px;
     pointer-events: none;
     opacity: 0;
-    border: 1px solid #f8f8f8;
+    border: 1px solid #fff;
     border-radius: 100%;
     background: rgba(0, 0, 0, .5)
 }
@@ -640,8 +626,8 @@ body {
     content: '';
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    border-top: 1px solid #f8f8f8;
-    border-right: 1px solid #f8f8f8
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff
 }
 
 #js-layer {
@@ -660,7 +646,7 @@ body {
 #js-layer #panel03 {
     display: table-cell;
     pointer-events: none;
-    background: #f8f8f8
+    background: #000
 }
 
 #js-scroll {
@@ -913,35 +899,30 @@ body {
 .footer {
     position: relative;
     overflow: hidden;
-    padding: 0px 6% 100px 16%;
-    color: #f8f8f8;
+    padding: 280px 6% 100px 33%;
+    color: #fff;
     background: #000
 }
 
 .footer .txt-large {
-    font-family: 'Noe Display';
-    font-size: 7.8rem;
-    font-weight: 600;
-    line-height: 1.2;
-    margin-bottom: 3.4%;
-    letter-spacing: 1px;
-    /* width: 70%; */
-    /* margin-bottom: 280px; */
+    font-size: 3.4rem;
+    line-height: 1.4;
+    width: 70%;
+    margin-bottom: 280px
 }
 
 .footer .txt-small {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     line-height: 1.9;
     margin-bottom: 20px;
-    margin-top: 40px;
     letter-spacing: 1px;
-    color: #9699A5;
+    color: #676767
 }
 
 .footer .contact-list {
     position: relative;
     z-index: 1;
-    margin-top: 110px;
+    margin-top: 115px
 }
 
 .footer .contact-list dd {
@@ -951,29 +932,18 @@ body {
 }
 
 .footer .contact-list dd a {
-    font-family: 'Noe Display';
-    font-size: 4.6rem;
-    /* line-height: 8rem; */
-    margin-bottom: 2.4rem;
-    /* color: #9699A5; */
-}
-
-.footer .contact-list dd a::selection{
-    color: #9699A5;
+    font-size: 1.2rem;
+    color: #fff
 }
 
 .footer .contact-list .copy {
-    /* float: right; */
+    float: right;
     margin: 0
 }
 
 .footer .contact-list .copy small {
-    font-size: 1.6rem;
-    line-height: 1.9;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    color: #9699A5;
-    /* width: 100%; */
+    font-size: 1rem;
+    color: #676767
 }
 
 #js-pjax-cont {
@@ -1087,7 +1057,7 @@ body {
     position: relative;
     padding-top: 14%;
     pointer-events: none;
-    background: #000000
+    background: #f1f1f1
 }
 
 #js-pjax-cont .project-detail .project-img {
@@ -1218,13 +1188,13 @@ body {
 }
 
 #js-pjax-cont .project-detail .txt-sub p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 100;
     line-height: 1.9;
     display: block;
     width: 100%;
-    letter-spacing: .1px;
-    color: rgb(105, 107, 114)
+    letter-spacing: .6px;
+    color: #777
 }
 
 #js-pjax-cont .project-detail .area-sp {
@@ -1495,7 +1465,7 @@ body {
     html {
         overflow-x: hidden;
         overflow-y: scroll;
-        -ms-overflow-style: touch;
+        overflow-scrolling: touch;
         -webkit-overflow-scrolling: touch
     }
     #js-scroll {
@@ -1535,33 +1505,21 @@ body {
     }
     #fv .profile {
         width: 80%;
-        margin: 0px 0 0 10%
+        margin: 60px 0 0 10%
     }
     #fv .profile .txt01 {
         font-size: 1.4rem;
         margin-bottom: 8%;
         letter-spacing: .4px
     }
-
     #fv .profile .txt01 br {
         display: none
     }
-    #fv .profile .txt00 {
-        font-family: 'Noe Display';
-        font-size: 7.8rem;
-        font-weight: 600;
-        line-height: 1.2;
-        margin-top: 40%;
-        margin-bottom: 5%;
-        letter-spacing: 1px;
-    }
     #fv .profile .txt02 {
-        font-size: 1.7rem;
-        line-height: 2;
-        margin-top: 38%;
+        font-size: 1.2rem;
+        line-height: 1.7;
         margin-bottom: 4%;
-        letter-spacing: .3px;
-        width: auto;
+        letter-spacing: .8px
     }
     #fv .profile .txt02 br {
         display: none
@@ -1571,17 +1529,8 @@ body {
     }
     .projects {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 80px
     }
-    /* .projects .project {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 36vw;
-        margin: 0 0 10% 0;
-        cursor: none;
-        background: #000
-    }     */
     .projects .project:before {
         display: none
     }
@@ -1664,15 +1613,15 @@ body {
         color: #fff
     }
     #js-pjax-cont .project-lead-wrap .txt {
-        font-size: 1.8rem;
+        font-size: 1.2rem;
         width: 100%;
         margin: 0 0 20px 0
     }
     #js-pjax-cont .project-lead-wrap .credits {
-        font-size: 1.8rem;
+        font-size: 1rem;
         float: none;
         width: 100%;
-        margin-bottom: 40px
+        margin-bottom: 10px
     }
     #js-pjax-cont .project-lead-wrap .url {
         font-size: 2rem
@@ -1770,7 +1719,7 @@ body {
         margin: 0 0 36px 0
     }
     #js-pjax-cont .project-detail .txt-sub p {
-        font-size: 1.8rem
+        font-size: 1.3rem
     }
     #js-pjax-cont .project-detail .area-sp {
         padding: 30px 0 0
@@ -1945,30 +1894,19 @@ body {
         font-size: 60rem
     }
     .footer {
-        padding: 80px 10% 40px 10%
+        padding: 120px 10% 40px 10%
     }
-
-    .footer .contact-list dd a {
-        font-family: 'Noe Display';
-        font-size: 4.6rem;
-        /* line-height: 8rem; */
-        margin-bottom: 2.4rem;
-        color: #DA2016;
-    }
-
     .footer .txt-large {
-        font-size: 8rem;
-        line-height: 8.8rem;
+        font-size: 2.6rem;
         width: 100%;
-        margin-bottom: 60px;
+        margin-bottom: 120px
     }
     .footer .txt-small {
-        font-size: 1.4rem;
-        margin-bottom: 6rem;
+        margin-bottom: 18px
     }
     .footer .contact-list {
         float: none;
-        margin-top: 0;
+        margin-top: 0
     }
     .footer .contact-list .copy {
         float: none;
