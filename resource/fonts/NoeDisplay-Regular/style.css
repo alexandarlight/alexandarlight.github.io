@@ -1,9 +1,7 @@
-/* font converted using font-converter.net. thank you! */
 @font-face {
-  font-family: "Noe Display Regular";
-
-  src: url("./fonts/NoeDisplay-Regular.woff") format("woff"), /* Modern Browsers */
-    url("./fonts/NoeDisplay-Regular.woff2") format("woff2"); /* Modern Browsers */
-  font-weight: normal;
+  font-family: 'Noe Display Regular';
+  src: url('NoeDisplay-Regular.woff2') format('woff2'),
+      url('NoeDisplay-Regular.woff') format('woff');
+  font-weight: bold;
   font-style: normal;
 }
