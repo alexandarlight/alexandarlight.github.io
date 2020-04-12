@@ -172,7 +172,7 @@ select {
 }
 
 ::selection {
-    color: #fff;
+    color: #f8f8f8;
     background: rgba(0, 0, 0, .3)
 }
 
@@ -205,7 +205,7 @@ select {
 }
 
 .fill-white {
-    fill: #fff
+    fill: rgb(0, 0, 0)
 }
 
 .fill-black {
@@ -377,16 +377,16 @@ body {
     position: relative;
     float: left;
     width: 62%;
-    margin: 15% 0 0 18%  /* top je bilo 35 */
+    margin: 10% 0 0 18%  /* top je bilo 35 */
 }
 
 #fv .profile .txt00 {  /* Let's talk header!   */
     font-family: 'Noe Display'; 
-    font-size: 14rem;
-    font-weight: 600;
+    font-size: 15.5rem;
+    font-weight: 900;
     line-height: 1.1;
     margin-bottom: 5%;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 #fv .profile .txt01 {
@@ -399,12 +399,13 @@ body {
 }
 
 #fv .profile .txt02 {
-    font-size: 1.6rem;
+    font-family: 'Interregular';
+    font-size: 1.8rem;
     line-height: 2;
     letter-spacing: .8px;
-    color: #9699A5;
+    color: #66686e;  /* Paragraph color */
     margin-bottom: 2rem;
-    width: 60%;
+    width: 55%;
 }
 
 #fv .profile .txt02 a {
@@ -588,12 +589,13 @@ body {
 }
 
 #progress .num {
-    font-size: 1.2rem;
+    font-family: 'Noe Display';
+    font-size: 18.8rem;
     position: relative;
     z-index: 100;
-    letter-spacing: 5px;
+    /* letter-spacing: 5px; */
     pointer-events: none!important;
-    color: #000000
+    color: #f8f8f8;
 }
 
 #js-cusor {
@@ -627,7 +629,7 @@ body {
     opacity: 0;
     border: 1px solid #f8f8f8;
     border-radius: 100%;
-    background: rgba(0, 0, 0, .5)
+    background: rgba(0, 0, 0, .5);
 }
 
 #js-cusor .arw:after {
@@ -641,7 +643,7 @@ body {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
     border-top: 1px solid #f8f8f8;
-    border-right: 1px solid #f8f8f8
+    border-right: 1px solid #f8f8f8;
 }
 
 #js-layer {
@@ -660,7 +662,7 @@ body {
 #js-layer #panel03 {
     display: table-cell;
     pointer-events: none;
-    background: #f8f8f8
+    background: #000000; /* Boja pozadine LOADERA */
 }
 
 #js-scroll {
@@ -688,19 +690,19 @@ body {
 
 .page-project {
     padding-top: 54.2vw;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .page-project * {
-    pointer-events: visible
+    pointer-events: visible;
 }
 
 .bg-black {
-    background: #000
+    background: #000;
 }
 
 .txt-white {
-    color: #fff
+    color: #fff;
 }
 
 .js-parallax {
@@ -726,7 +728,7 @@ body {
     overflow: hidden;
     width: 100%;
     height: 100%;
-    pointer-events: none
+    pointer-events: none;
 }
 
 .project-ttl .ttl {
@@ -739,15 +741,15 @@ body {
     height: 100%;
     margin: auto auto auto 32%;
     pointer-events: none;
-    align-items: center
+    align-items: center;
 }
 
 .project-ttl .ttl.ff-white {
-    color: #fff
+    color: #f8f8f8; /* Boja texta na thumbnailovima */
 }
 
 .project-ttl .ttl.is-current .name {
-    color: #fff!important
+    color: #f8f8f8!important /* Boja texta na thumbnailovima kada hoverujes na njih */
 }
 
 .project-ttl .ttl .name {
@@ -757,12 +759,12 @@ body {
     -webkit-transition: color 1s;
     transition: color 1s;
     padding-left: 2%;
-    width: 100%
+    width: 100%;
 }
 
 .project-ttl .ttl .name.is-out em span {
     -webkit-transform: translate3d(0, -100%, 0);
-    transform: translate3d(0, -100%, 0)
+    transform: translate3d(0, -100%, 0);
 }
 
 .project-ttl .ttl .name.is-out em span:nth-child(2) {
@@ -823,19 +825,19 @@ body {
     line-height: 1.2;
     position: relative;
     z-index: 1;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .project-ttl .ttl em span {
     display: inline-block;
     -webkit-transition: transform .5s;
-    transition: transform .5s
+    transition: transform .5s;
 }
 
 .projects {
     position: relative;
     width: 76%;
-    margin: 0 auto 30vw
+    margin: 0 auto 30vw;
 }
 
 .projects .project {
@@ -845,7 +847,7 @@ body {
     height: 36vw;
     margin: 0 0 40% 0;
     cursor: none;
-    background: #000
+    background: #000;
 }
 
 .projects .project:before {
@@ -856,27 +858,27 @@ body {
     position: absolute;
     top: 0;
     right: 0;
-    background: #f4f4f4;
+    background: #000000; /* Boja pozadine iza slika slika u indexu koja se pomera sa desne strane slike*/
     z-index: 10;
     -webkit-transition: transform 1s ease;
     transition: transform 1s ease;
     -webkit-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0)
+    transform: translate3d(100%, 0, 0);
 }
 
 .projects .project.is-ready:before {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0);
 }
 
 .projects .project.is-ready .img {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 .projects .project:hover .img {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2)
+    transform: scale(1.2);
 }
 
 .projects .project:hover .img img {
@@ -907,7 +909,7 @@ body {
     height: 100%;
     -webkit-transform: translate3d(0, -100%, 0);
     transform: translate3d(0, -100%, 0);
-    background: #f4f4f4
+    background: #000000;
 }
 
 .footer {
@@ -935,7 +937,7 @@ body {
     margin-bottom: 20px;
     margin-top: 40px;
     letter-spacing: 1px;
-    color: #9699A5;
+    color: #66686e;
 }
 
 .footer .contact-list {
@@ -955,7 +957,7 @@ body {
     font-size: 4.6rem;
     /* line-height: 8rem; */
     margin-bottom: 2.4rem;
-    /* color: #9699A5; */
+    /* color: #66686e; */
 }
 
 .footer .contact-list dd a::selection{
@@ -1120,7 +1122,7 @@ body {
     position: relative;
     width: 100%;
     margin: 20% auto;
-    background: #f1f1f1
+    background: #f8f8f8
 }
 
 #js-pjax-cont .project-detail .img-cuts-middle .img-cuts-box {
@@ -1210,7 +1212,7 @@ body {
 
 #js-pjax-cont .project-detail .txt-sub strong {
     font-size: 3.6rem;
-    line-height: .8;
+    line-height: 1;
     position: relative;
     display: block;
     width: 100%;
@@ -1224,7 +1226,7 @@ body {
     display: block;
     width: 100%;
     letter-spacing: .1px;
-    color: rgb(105, 107, 114)
+    color: #66686e;
 }
 
 #js-pjax-cont .project-detail .area-sp {
@@ -1501,6 +1503,15 @@ body {
     #js-scroll {
         position: relative
     }
+    #progress .num {
+        font-family: 'Noe Display';
+        font-size: 4.4rem;
+        position: relative;
+        z-index: 100;
+        /* letter-spacing: 5px; */
+        pointer-events: none!important;
+        color: #000000;
+    }    
     #fv {
         position: relative
     }
@@ -1556,7 +1567,8 @@ body {
         letter-spacing: 1px;
     }
     #fv .profile .txt02 {
-        font-size: 1.7rem;
+        font-family: 'Interregular';
+        font-size: 1.8rem;
         line-height: 2;
         margin-top: 38%;
         margin-bottom: 4%;
