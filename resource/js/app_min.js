@@ -386,16 +386,17 @@ var project = function() {
                 n = imagesLoaded("body"),
                 a = n.images.length,
                 o = 0,
-                r = 0;
+                r = -1;
             n.on("progress", function() {
                 o++
             });
+            var textToShow = ['Identity', 'Interface', 'Experience']
             var i = function() {
-                    r += .1 * (o / a * 100 - r), e.text(Math.floor(r)), r >= 100 && (clearInterval(s), setTimeout(function() {
+                    r += 1, e.text(textToShow[r]), r >= 3 && (clearInterval(s), setTimeout(function() {
                         t.addClass("is-hide"), T()
-                    }, 400)), r > 99.9 && (r = 100)
+                    }, 400)), r >=3 && (r = 3)
                 },
-                s = setInterval(i, 1e3 / 60)
+                s = setInterval(i, 600)
         }()
     }()
 };
