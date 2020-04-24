@@ -201,7 +201,7 @@ select {
 .projects .project .img .sp-ttl {
     font-family: 'Noe Display Regular';
     font-weight: 100;
-    font-style: italic
+    font-style: italic;
 }
 
 .fill-white {
@@ -209,7 +209,7 @@ select {
 }
 
 .fill-black {
-    fill: #000
+    fill: #000; /* Boja prelaza */
 }
 
 .mt0 {
@@ -242,7 +242,8 @@ body {
     min-height: 100%;
     color: #F8F8F8;
     background: #000;
-    -webkit-font-smoothing: antialiased
+    -webkit-font-smoothing: antialiased;
+    user-select: select none;
 }
 
 .js-footer-in.is-ready .is-hide,
@@ -374,19 +375,22 @@ body {
 }
 
 #fv .profile {
+    display: none;
     position: relative;
-    float: left;
+    /* float: left; */
+    text-align: center;
     width: 62%;
-    margin: 10% 0 0 18%  /* top je bilo 35 */
+    margin: 13% 0 0 18%  /* top je bilo 35, right je bilo 18 */
 }
 
 #fv .profile .txt00 {  /* Let's talk header!   */
     font-family: 'Noe Display'; 
-    font-size: 15.5rem;
+    font-size: 21.5rem; /* 15.5  */
     font-weight: 900;
     line-height: 1.1;
     margin-bottom: 5%;
     letter-spacing: 2px;
+    /* -webkit-text-stroke: 2px white; */
 }
 
 #fv .profile .txt01 {
@@ -412,6 +416,29 @@ body {
     display: inline;
     text-decoration: underline
 }
+
+/* width */
+::-webkit-scrollbar {
+	width: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px black; 
+	border-radius: 0px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: #a0a0a0; 
+	border-radius: 0px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: white;
+	width: 2px;
+  }
 
 .scroll {
     position: fixed;
@@ -490,78 +517,84 @@ body {
 
 .nav-right {
     position: fixed;
+    writing-mode: vertical-rl;
+    /* text-orientation: upright; */
     z-index: 100;
     top: 0;
     right: 0;
     display: table;
-    margin: 8% 6% 0 0;
+    margin: 8% 8% 0 0;
     cursor: pointer;
     -webkit-transition: transform .4s, margin .4s;
     transition: transform .4s, margin .4s;
-    pointer-events: visible
+    pointer-events: visible;
 }
 
 .nav-right.is-white a {
-    color: #f8f8f8
+    color: #f8f8f8;
 }
 
 .nav-right a {
     font-size: 1rem;
     font-weight: 400;
     position: relative;
-    display: block;
+    display: inline;
     width: 100%;
-    padding: 0 0 12px 0;
+    padding: 0 0 22px 0;
     text-align: right;
-    letter-spacing: 1.4px
+    letter-spacing: 3px;
 }
 
 .nav-right a:before {
     position: absolute;
-    top: 5px;
-    right: -18px;
+    top: 0px;
+    right: 18px;
     display: block;
     width: 0;
     height: 2px;
     content: '';
-    -webkit-transition: width .4s;
-    transition: width .4s;
-    background: currentColor
+    -webkit-transition: height .4s;
+    transition: height .4s;
+    background: currentColor;
 }
 
 .nav-right a:hover:before {
-    width: 10px
+    height: 40px;
+    width: 2px;
 }
 
 .nav-back {
+    writing-mode: vertical-rl;
+    /*text-orientation: upright;  upright */
     font-size: 1rem;
     position: fixed;
     z-index: 11;
     top: 0;
     left: 0;
     margin: 8% 0 0 6%;
-    letter-spacing: 1.4px
+    letter-spacing: 3px;
 }
 
 .nav-back.is-white {
-    color: #f8f8f8
+    color: #f8f8f8;
 }
 
 .nav-back:before {
     position: absolute;
-    top: 5px;
-    left: -18px;
+    top: 0px;
+    right: 18px;
     display: block;
     width: 0;
     height: 2px;
     content: '';
-    -webkit-transition: width .4s;
-    transition: width .4s;
+    -webkit-transition: height .4s;
+    transition: height .4s;
     background: currentColor
 }
 
 .nav-back:hover:before {
-    width: 10px
+    height: 31px;
+    width: 2px;
 }
 
 #progress {
@@ -593,7 +626,7 @@ body {
     font-size: 18.8rem;
     position: relative;
     z-index: 100;
-    /* letter-spacing: 5px; */
+    letter-spacing: 2px;
     pointer-events: none!important;
     color: #f8f8f8;
 }
@@ -710,7 +743,7 @@ body {
     left: 0;
     overflow: hidden;
     width: 100%;
-    height: 100%
+    height: 100%;
 }
 
 .js-parallax img {
@@ -719,7 +752,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    will-change: transform
+    will-change: transform;
 }
 
 .project-ttl {
@@ -739,7 +772,8 @@ body {
     clip: rect(0, 0, 0, 0);
     width: 57%;
     height: 100%;
-    margin: auto auto auto 32%;
+    text-align: center;
+    margin: auto auto auto 20%; /* 36% */
     pointer-events: none;
     align-items: center;
 }
@@ -820,7 +854,7 @@ body {
 }
 
 .project-ttl .ttl em {
-    font-size: 8rem;
+    font-size: 10rem; /* text na thumbnailovima */
     font-weight: 100;
     line-height: 1.2;
     position: relative;
@@ -873,16 +907,16 @@ body {
 
 .projects .project.is-ready .img {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(1); /* kada dolazi zoom 9 je kul */
 }
 
 .projects .project:hover .img {
     -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    transform: scale(1.2); /* ovo je zoom, bilo je 1.2 */
 }
 
 .projects .project:hover .img img {
-    opacity: .2
+    opacity: .2;
 }
 
 .projects .project .img {
@@ -891,7 +925,7 @@ body {
     -webkit-transition: transform 1s ease;
     transition: transform 1s ease;
     -webkit-transform: scale(1);
-    transform: scale(1);
+    transform: scale(1); /* sa ovim se igraj 0.4*/
     height: 100%
 }
 
@@ -915,16 +949,16 @@ body {
 .footer {
     position: relative;
     overflow: hidden;
-    padding: 0px 6% 100px 16%;
+    padding: 0px 6% 60px 16%;
     color: #f8f8f8;
     background: #000
 }
 
 .footer .txt-large {
     font-family: 'Noe Display';
-    font-size: 7.8rem;
+    font-size: 15rem;
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1;
     margin-bottom: 3.4%;
     letter-spacing: 1px;
     /* width: 70%; */
@@ -937,13 +971,13 @@ body {
     margin-bottom: 20px;
     margin-top: 40px;
     letter-spacing: 1px;
-    color: #66686e;
+    color: #00ff55; /* 666e69 siva */
 }
 
 .footer .contact-list {
     position: relative;
     z-index: 1;
-    margin-top: 110px;
+    margin-top: 80px;
 }
 
 .footer .contact-list dd {
@@ -956,12 +990,16 @@ body {
     font-family: 'Noe Display';
     font-size: 4.6rem;
     /* line-height: 8rem; */
-    margin-bottom: 2.4rem;
+    margin-bottom: 8rem;
     /* color: #66686e; */
 }
 
 .footer .contact-list dd a::selection{
     color: #9699A5;
+}
+
+.footer .contact-list dd :hover{
+    color: #66686e;
 }
 
 .footer .contact-list .copy {
@@ -974,7 +1012,7 @@ body {
     line-height: 1.9;
     margin-bottom: 20px;
     letter-spacing: 1px;
-    color: #9699A5;
+    color: #66686e;
     /* width: 100%; */
 }
 
@@ -991,7 +1029,7 @@ body {
     left: 0;
     width: 54%;
     margin: 0 0 0 33%;
-    padding: 18% 0 100px;
+    padding: 10% 0 100px; /* padding: 18% 0 100px; */
     color: #fff
 }
 
@@ -1000,7 +1038,8 @@ body {
     line-height: 1.3;
     position: relative;
     overflow: visible;
-    margin: 0 0 80px 0
+    align-items: center;
+    margin: 0 0 80px 0; /* margina texta na thumbnailovima projekata */
 }
 
 #js-pjax-cont .project-lead-wrap .txt {
@@ -1017,7 +1056,7 @@ body {
     line-height: 2.4;
     display: block;
     float: left;
-    width: 27%;
+    width: 100%; /* 27% */
     margin-bottom: 40px
 }
 
@@ -1096,7 +1135,7 @@ body {
     width: 70%;
     margin: 14% auto;
     padding: 6%;
-    background: #eaeaea
+    background: #222222; /* 48000F , eaeaea */
 }
 
 #js-pjax-cont .project-detail .project-img .size-half {
@@ -1165,7 +1204,7 @@ body {
 #js-pjax-cont .project-detail .img-cut-fit {
     position: relative;
     height: 66vw;
-    margin: 14% auto
+    margin: 14% auto;
 }
 
 #js-pjax-cont .project-detail .img-cut-medium {
@@ -1186,7 +1225,7 @@ body {
     overflow: hidden;
     width: 54%;
     margin: 14% auto 14% 15%;
-    padding-left: 18vw
+    padding-left: 18vw;
 }
 
 #js-pjax-cont .project-detail .txt-sub .num {
@@ -1196,7 +1235,7 @@ body {
     display: inline-block;
     width: 80px;
     text-align: center;
-    letter-spacing: 3px
+    letter-spacing: 3px;
 }
 
 #js-pjax-cont .project-detail .txt-sub .num:before {
@@ -1207,16 +1246,16 @@ body {
     width: 17px;
     height: 1px;
     content: '';
-    background: currentColor
+    background: currentColor;
 }
 
 #js-pjax-cont .project-detail .txt-sub strong {
     font-size: 3.6rem;
-    line-height: 1;
+    line-height: 1.3;
     position: relative;
     display: block;
     width: 100%;
-    margin: 0 6% 36px 0
+    margin: 0 6% 36px 0;
 }
 
 #js-pjax-cont .project-detail .txt-sub p {
@@ -1233,7 +1272,7 @@ body {
     position: relative;
     padding: 1px 0 0;
     color: #fff;
-    background: #000
+    background: #000;
 }
 
 #js-pjax-cont .project-detail .area-sp .img-sp {
@@ -1247,9 +1286,9 @@ body {
 #js-pjax-cont .project-detail .area-sp .sp-captures {
     position: relative;
     z-index: 100;
-    width: 70%;
-    height: 36vw;
-    margin: 0 auto
+    width: 65%; /* 70% */
+    height: 46vw; /* 36% */
+    margin: 0 auto;
 }
 
 #js-pjax-cont .project-detail .area-sp .sp-capture-img {
@@ -1322,7 +1361,10 @@ body {
 }
 
 #js-pjax-cont .project-detail .next .next-txt {
-    font-size: 1.2rem;
+    font-family: 'Noe Display Regular';
+    font-weight: 100;
+    font-style: italic;
+    font-size: 8.2rem;
     position: absolute;
     z-index: 13;
     top: 0;
@@ -1331,9 +1373,8 @@ body {
     margin: auto;
     text-align: center;
     letter-spacing: .6px;
-    color: #fff;
-    font-weight: 700;
-    bottom: 0
+    color: #f8f8f8;
+    bottom: 0;
 }
 
 #js-pjax-cont .project-detail .next .writing {
@@ -1390,20 +1431,22 @@ body {
 }
 
 .page-about {
-    color: #fff;
+    color: #cacaca; /* rgb(255, 50, 50); */
     background: #000
 }
 
 .page-about .txt-wrap {
     width: 40%;
     margin: 0 0 200px 33%;
-    padding-top: 440px
+    padding-top: 240px
 }
 
 .page-about .txt-wrap .hello {
-    font-size: 10.4rem;
+    font-family: 'Noe Display Regular';
+    font-size: 7.5rem;
     font-weight: 400;
-    margin: 0 0 80px -80px
+    margin: 0 0 80px -80px;
+    color: #F8F8F8;
 }
 
 .page-about .txt-wrap .txt-small {
@@ -1411,13 +1454,15 @@ body {
 }
 
 .page-about .txt-wrap .txt-large {
+    font-family: 'Noe Display Regular';
     font-size: 3rem;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 1.55;
     margin-bottom: 160px
 }
 
 .page-about .txt-wrap .txt-large a {
+    font-family: 'Noe Display Regular';
     position: relative;
     display: inline;
     -webkit-transition: opacity .4s;
@@ -1426,6 +1471,7 @@ body {
 }
 
 .page-about .txt-wrap .txt-large a:hover {
+    font-family: 'Noe Display Regular';
     opacity: .6
 }
 
@@ -1465,14 +1511,15 @@ body {
 }
 
 .page-about .big-type {
-    font-size: 100rem;
+    font-size: 36rem; /* 100rem */
     line-height: 1;
     position: absolute;
+    padding-left: 8.6rem;
     z-index: 0;
     top: 0;
     left: 0;
     pointer-events: none!important;
-    opacity: .05
+    opacity: .08; /* .05 */
 }
 
 .sp-none {
@@ -1483,7 +1530,62 @@ body {
     display: none!important
 }
 
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:1366px) {  /* iPad Pro horizontal */
+    body,
+    html {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        min-height: 100%;
+        -ms-overflow-style: touch;
+        -webkit-overflow-scrolling: touch
+    }
+    #fv .heading {
+        display: none;
+    }
+    #fv .profile {
+        display: block;
+        width: 80%;
+        margin: 0px 0 0 10%;
+    }
+    #fv .profile .txt01 {
+        font-size: 1.4rem;
+        margin-bottom: 8%;
+        letter-spacing: .4px
+    }
+
+    #fv .profile .txt01 br {
+        display: none;
+    }
+    #fv .profile .txt00 {
+        font-family: 'Noe Display';
+        text-align: center;
+        font-size: 16rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-top: 30%;
+        margin-bottom: 20%;
+        letter-spacing: 1px;
+        user-select: none;
+    }
+}
+
+@media screen and (max-width:1024px) { /* iPad Pro vertical */
+
+    #fv .profile .txt00 {
+        font-family: 'Noe Display';
+        text-align: center;
+        font-size: 10rem;
+        font-weight: 600;
+        line-height: 1.2;
+        margin-top: 30%;
+        margin-bottom: 20%;
+        letter-spacing: 1px;
+        user-select: none
+    }
+}
+
+@media screen and (max-width:768px) { /* Mobile */
     .sp-none {
         display: none!important
     }
@@ -1497,6 +1599,7 @@ body {
     html {
         overflow-x: hidden;
         overflow-y: scroll;
+        min-height: 100%;
         -ms-overflow-style: touch;
         -webkit-overflow-scrolling: touch
     }
@@ -1510,7 +1613,7 @@ body {
         z-index: 100;
         /* letter-spacing: 5px; */
         pointer-events: none!important;
-        color: #000000;
+        color: #f8f8ff;
     }    
     #fv {
         position: relative
@@ -1545,8 +1648,9 @@ body {
         display: none
     }
     #fv .profile {
+        display: block;
         width: 80%;
-        margin: 0px 0 0 10%
+        margin: 0px 0 0 10%;
     }
     #fv .profile .txt01 {
         font-size: 1.4rem;
@@ -1555,16 +1659,18 @@ body {
     }
 
     #fv .profile .txt01 br {
-        display: none
+        display: none;
     }
     #fv .profile .txt00 {
         font-family: 'Noe Display';
-        font-size: 7.8rem;
+        text-align: left;
+        font-size: 7.3rem;
         font-weight: 600;
         line-height: 1.2;
-        margin-top: 40%;
-        margin-bottom: 5%;
+        margin-top: 70%;
+        margin-bottom: 30%;
         letter-spacing: 1px;
+        user-select: none;
     }
     #fv .profile .txt02 {
         font-family: 'Interregular';
@@ -1576,7 +1682,7 @@ body {
         width: auto;
     }
     #fv .profile .txt02 br {
-        display: none
+        display: none;
     }
     #fv .scroll {
         display: none
@@ -1607,7 +1713,7 @@ body {
         margin: 0;
         -webkit-transform: translate3d(0, -21px, 0);
         transform: translate3d(0, -21px, 0);
-        text-align: center
+        text-align: center;
     }
     .projects .sp-ttl.is-white {
         color: #fff
@@ -1673,7 +1779,7 @@ body {
         line-height: 1.2;
         top: -31px;
         margin: 0 0 10px 0;
-        color: #fff
+        color: #f8f8f8;
     }
     #js-pjax-cont .project-lead-wrap .txt {
         font-size: 1.8rem;
@@ -1717,7 +1823,7 @@ body {
         position: relative;
         width: 100%;
         margin: 20% auto;
-        background: #f1f1f1
+        background: #f8f8f8;
     }
     #js-pjax-cont .project-detail .img-cuts-middle .img-cuts-box {
         position: absolute;
@@ -1750,8 +1856,8 @@ body {
         content: ''
     }
     #js-pjax-cont .project-detail .img-cut-fit {
-        height: 65vw;
-        margin: 20% auto
+        height: 65vw; /* 65vw */
+        margin: 20% auto;
     }
     #js-pjax-cont .project-detail .img-cut-medium {
         width: 80%;
@@ -1788,8 +1894,8 @@ body {
         padding: 30px 0 0
     }
     #js-pjax-cont .project-detail .area-sp .img-sp {
-        width: 37%;
-        margin: 8% -6% 0 0
+        width: 0%; /* 37% */
+        margin: 8% -6% 0 0;
     }
     #js-pjax-cont .project-detail .area-sp .sp-captures {
         width: 80%;
@@ -1841,15 +1947,10 @@ body {
     #js-pjax-cont .project-detail .next #next-panel-black .wrap span {
         height: 68vw
     }
-    .emoji {
-        font-size: 3rem;
-        font-size: normal;
-        margin-left: 80px;
-        vertical-align: middle
-    }
+
     .page-about {
-        color: #fff;
-        background: #000
+        color: #cacaca;
+        background: #000;
     }
     .page-about .txt-wrap {
         width: 48%;
@@ -1857,6 +1958,7 @@ body {
         padding-top: 440px
     }
     .page-about .txt-wrap .hello {
+        font-family: 'Noe Display Regular';
         font-size: 10.4rem;
         font-weight: 400;
         margin: 0 0 80px -80px
@@ -1865,6 +1967,7 @@ body {
         margin-bottom: 60px
     }
     .page-about .txt-wrap .txt-large {
+        font-family: 'Noe Display';
         font-size: 3rem;
         font-weight: 400;
         line-height: 1.5;
@@ -1920,9 +2023,13 @@ body {
         pointer-events: none!important;
         opacity: .05
     }
-    .emoji {
-        font-size: 2.4rem;
-        margin-left: 30px
+
+    #js-pjax-cont .project-detail .next .next-txt {
+        font-family: 'Noe Display Regular';
+        font-weight: 100;
+        font-style: italic;
+        font-size: 3.2rem;
+        letter-spacing: .1px;
     }
     .page-about .txt-wrap {
         width: 80%;
@@ -1930,15 +2037,18 @@ body {
         padding-top: 220px
     }
     .page-about .txt-wrap .hello {
-        font-size: 9rem;
-        margin: 0 0 50px -7vw
+        font-family: 'Noe Display';
+        font-size: 5rem;
+        margin: 0 0 50px 0vw;
     }
     .page-about .txt-wrap .txt-small {
         margin-bottom: 40px
     }
     .page-about .txt-wrap .txt-large {
-        font-size: 2.2rem;
-        margin-bottom: 140px
+        font-family: 'Noe Display Regular';
+        font-size: 2.3rem;
+        line-height: 3.8rem;
+        margin-bottom: 140px;
     }
     .page-about .txt-wrap .txt-large a:hover {
         opacity: 1
@@ -1965,7 +2075,7 @@ body {
         font-size: 4.6rem;
         /* line-height: 8rem; */
         margin-bottom: 2.4rem;
-        color: #DA2016;
+        color: #f8f8f8; /* DA2016 */
     }
 
     .footer .txt-large {

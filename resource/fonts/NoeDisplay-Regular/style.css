@@ -2,6 +2,5 @@
   font-family: 'Noe Display Regular';
   src: url('NoeDisplay-Regular.woff2') format('woff2'),
       url('NoeDisplay-Regular.woff') format('woff');
-  font-weight: bold;
   font-style: normal;
 }
