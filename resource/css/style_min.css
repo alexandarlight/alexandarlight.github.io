@@ -1138,7 +1138,21 @@ body {
     background: #222222; /* 48000F , eaeaea */
 }
 
-#js-pjax-cont .project-detail .project-img .size-half {
+#js-pjax-cont .project-detail .project-img-2 {
+    width: 70%;
+    margin: 14% auto;
+    padding: 6%;
+    background: #1D2D88;
+}
+
+#js-pjax-cont .project-detail .project-img-3 {
+    width: 80%;
+    margin: 14% auto;
+    padding: 6%;
+    background: #700000;
+}
+
+#js-pjax-cont .project-detail .project-img .project-img-2 .size-half {
     width: 43%
 }
 
@@ -1808,11 +1822,11 @@ body {
     #js-pjax-cont .project-detail {
         padding-top: 100px
     }
-    #js-pjax-cont .project-detail .project-img {
+    #js-pjax-cont .project-detail .project-img .project-img-2 {
         width: 80%;
         padding: 0
     }
-    #js-pjax-cont .project-detail .project-img .size-half {
+    #js-pjax-cont .project-detail .project-img .project-img-2 .size-half {
         width: 43%
     }
     #js-pjax-cont .project-detail .project-video {
