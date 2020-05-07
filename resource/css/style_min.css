@@ -1152,6 +1152,13 @@ body {
     background: #700000;
 }
 
+#js-pjax-cont .project-detail .project-img-4 {
+    width: 80%;
+    margin: 14% auto;
+    padding: 6%;
+    background: #1633FF;
+}
+
 #js-pjax-cont .project-detail .project-img .project-img-2 .size-half {
     width: 43%
 }

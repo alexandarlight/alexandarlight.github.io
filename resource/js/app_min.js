@@ -98,7 +98,7 @@ function createHeading() {
 
     //     imgSize = [800, 1000];
     //   } else {
-        img.src = "resource/img/Ideas.svg";
+        img.src = "resource/img/Design.svg";
     //   }
 
       let a1, a2;
