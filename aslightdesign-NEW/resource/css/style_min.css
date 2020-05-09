@@ -360,7 +360,7 @@ body {
 }
 
 #fv h2 {
-    font-family: 'Noe Display Regular';
+    font-family: 'Helvetica-Compressed';
     position: relative;
     float: left;
     overflow: hidden;
@@ -1584,10 +1584,10 @@ body {
         display: none;
     }
     #fv .profile .txt00 {
-        font-family: 'Noe Display';
+        font-family: 'PAG';
         text-align: center;
-        font-size: 16rem;
-        font-weight: 600;
+        font-size: 20rem;
+        font-weight: 100;
         line-height: 1.2;
         margin-top: 30%;
         margin-bottom: 20%;
@@ -1599,9 +1599,9 @@ body {
 @media screen and (max-width:1024px) { /* iPad Pro vertical */
 
     #fv .profile .txt00 {
-        font-family: 'Helvetica-Compressed';
+        font-family: 'PAG';
         text-align: center;
-        font-size: 10rem;
+        font-size: 16rem;
         font-weight: 100;
         line-height: 1.2;
         margin-top: 30%;
