@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'rainer';
+    src: url('rainer-webfont.woff2') format('woff2'),
+         url('rainer-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

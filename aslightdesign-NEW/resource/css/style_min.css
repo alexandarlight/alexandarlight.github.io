@@ -199,9 +199,8 @@ select {
 .page-about .txt-wrap .mail p,
 .project-ttl .ttl em,
 .projects .project .img .sp-ttl {
-    font-family: 'PAG';
-    font-weight: 100;
-    font-style: italic;
+    font-family: 'rainer';
+    /* text-transform: uppercase; */
 }
 
 .fill-white {
@@ -360,7 +359,8 @@ body {
 }
 
 #fv h2 {
-    font-family: 'Helvetica-Compressed';
+    font-family: 'rainer';
+    text-transform: uppercase;
     position: relative;
     float: left;
     overflow: hidden;
@@ -384,7 +384,8 @@ body {
 }
 
 #fv .profile .txt00 {  /* Let's talk header!   */
-    font-family: 'Helvetica-Compressed';
+    font-family: 'rainer';
+    text-transform: uppercase;
     font-size: 21.5rem; /* 15.5  */
     line-height: 1.1;
     margin-bottom: 5%;
@@ -621,7 +622,8 @@ body {
 }
 
 #progress .num {
-    font-family: 'Helvetica-Compressed';
+    font-family: 'rainer';
+    text-transform: uppercase;
     font-size: 18.8rem;
     position: relative;
     z-index: 100;
@@ -755,7 +757,8 @@ body {
 }
 
 .project-ttl {
-    font-family: 'Helvetica-Compressed';
+    font-family: 'rainer';
+    text-transform: uppercase;
     position: fixed;
     z-index: 100;
     overflow: hidden;
@@ -765,7 +768,8 @@ body {
 }
 
 .project-ttl .ttl {
-    font-family: 'Helvetica-Compressed';
+    font-family: 'rainer';
+    text-transform: uppercase;
     position: absolute;
     top: 0;
     left: 0;
@@ -956,8 +960,9 @@ body {
 }
 
 .footer .txt-large {
-    font-family: 'Helvetica-Compressed';
-    font-size: 15rem;
+    font-family: 'rainer';
+    text-transform: uppercase;
+    font-size: 26rem;
     line-height: 1;
     margin-bottom: 3.4%;
     /* letter-spacing: 1px; */
@@ -987,8 +992,9 @@ body {
 }
 
 .footer .contact-list dd a {
-    font-family: 'Helvetica-Compressed';
-    font-size: 4.6rem;
+    font-family: 'rainer';
+    text-transform: uppercase;
+    font-size: 12rem;
     /* line-height: 8rem; */
     margin-bottom: 8rem;
     /* color: #66686e; */
@@ -1256,7 +1262,7 @@ body {
     display: inline-block;
     width: 80px;
     text-align: center;
-    letter-spacing: 3px;
+    /* letter-spacing: 3px; */
 }
 
 #js-pjax-cont .project-detail .txt-sub .num:before {
@@ -1271,11 +1277,12 @@ body {
 }
 
 #js-pjax-cont .project-detail .txt-sub strong {
-    font-family: 'Helvetica-Compressed';
-    font-weight: 400;
-    font-size: 3.6rem;
+    font-family: 'Interregular';
+    /* text-transform: uppercase; */
+    font-weight: 900;
+    font-size: 3rem;
     /* letter-spacing: 2px; */
-    line-height: 1.3;
+    line-height: 1.5;
     position: relative;
     display: block;
     width: 100%;
@@ -1385,15 +1392,16 @@ body {
 }
 
 #js-pjax-cont .project-detail .next .next-txt {
-    font-family: 'PAG';
+    font-family: 'rainer';
+    text-transform: uppercase;
     font-weight: 100;
-    font-style: italic;
-    font-size: 8.2rem;
+    /* font-style: italic; */
+    font-size: 22rem;
     position: absolute;
     z-index: 13;
     top: 0;
     width: 100%;
-    height: 20px;
+    height: 160px; /* height: 20px; */
     margin: auto;
     text-align: center;
     letter-spacing: .6px;
@@ -1466,12 +1474,12 @@ body {
 }
 
 .page-about .txt-wrap .hello {
-    font-family: 'Helvetica-Compressed';
-    font-size: 16rem; /* 8.5rem */
-    line-height: 1.1;
-    font-weight: 400;
-    letter-spacing: 1px;
-    margin: 0 0 80px -80px; /* 0 0 80px -80px */
+    font-family: 'rainer';
+    text-transform: uppercase;
+    font-size: 24rem; /* 8.5rem */
+    line-height: 1;
+    /* letter-spacing: 1px; */
+    margin: -60px 0 80px -100px; /* 0 0 80px -80px */
     color: #F8F8F8;
 }
 
@@ -1584,7 +1592,8 @@ body {
         display: none;
     }
     #fv .profile .txt00 {
-        font-family: 'PAG';
+        font-family: 'rainer';
+        text-transform: uppercase;
         text-align: center;
         font-size: 20rem;
         font-weight: 100;
@@ -1594,14 +1603,18 @@ body {
         letter-spacing: 1px;
         user-select: none;
     }
+
+    .page-about .txt-wrap .hello {
+        font-size: 14rem; /* 8.5rem */
 }
 
 @media screen and (max-width:1024px) { /* iPad Pro vertical */
 
     #fv .profile .txt00 {
-        font-family: 'PAG';
+        font-family: 'rainer';
+        text-transform: uppercase;
         text-align: center;
-        font-size: 16rem;
+        font-size: 20rem;
         font-weight: 100;
         line-height: 1.2;
         margin-top: 30%;
@@ -1633,8 +1646,9 @@ body {
         position: relative
     }
     #progress .num {
-        font-family: 'Helvetica-Compressed';
-        font-size: 7rem;
+        font-family: 'rainer';
+        text-transform: uppercase;
+        font-size: 10rem;
         position: relative;
         z-index: 100;
         /* letter-spacing: 5px; */
@@ -1688,9 +1702,10 @@ body {
         display: none;
     }
     #fv .profile .txt00 {
-        font-family: 'PAG';
+        font-family: 'rainer';
+        text-transform: uppercase;
         text-align: left;
-        font-size: 12rem;
+        font-size: 14.5rem;
         font-weight: 400;
         line-height: 1;
         margin-top: 80%;
@@ -1819,7 +1834,7 @@ body {
         margin-bottom: 40px
     }
     #js-pjax-cont .project-lead-wrap .url {
-        font-size: 2rem
+        font-size: 5rem
     }
     #js-pjax-cont .scroll.is-left {
         display: none
@@ -1909,8 +1924,8 @@ body {
         text-align: left
     }
     #js-pjax-cont .project-detail .txt-sub strong {
-        font-size: 3.2rem;
-        line-height: 1.2;
+        font-size: 3rem;
+        line-height: 1.4;
         margin: 0 0 36px 0
     }
     #js-pjax-cont .project-detail .txt-sub p {
@@ -1984,7 +1999,8 @@ body {
         padding-top: 440px
     }
     .page-about .txt-wrap .hello {
-        font-family: 'Helvetica-Compressed';
+        font-family: 'rainer';
+        text-transform: uppercase;
         font-size: 10.4rem;
         font-weight: 400;
         margin: 0 0 80px -80px
@@ -2051,10 +2067,11 @@ body {
     }
 
     #js-pjax-cont .project-detail .next .next-txt {
-        font-family: 'Helvetica-Compressed';
+        font-family: 'rainer';
+        text-transform: uppercase;
         font-weight: 100;
-        font-style: italic;
-        font-size: 3.2rem;
+        /* font-style: italic; */
+        font-size: 10rem;
         letter-spacing: .1px;
     }
     .page-about .txt-wrap {
@@ -2063,8 +2080,9 @@ body {
         padding-top: 220px
     }
     .page-about .txt-wrap .hello {
-        font-family: 'Helvetica-Compressed';
-        font-size: 6.5rem;
+        font-family: 'rainer';
+        text-transform: uppercase;
+        font-size: 10.4rem;
         margin: 0 0 90px 0vw;
     }
     .page-about .txt-wrap .txt-small {
@@ -2097,16 +2115,17 @@ body {
     }
 
     .footer .contact-list dd a {
-        font-family: 'Helvetica-Compressed';
-        font-size: 6rem;
-        /* line-height: 8rem; */
+        font-family: 'rainer';
+        text-transform: uppercase;
+        font-size: 8.8rem;
+        line-height: 8rem;
         margin-bottom: 2.4rem;
         color: #f8f8f8; /* DA2016 */
     }
 
     .footer .txt-large {
-        font-size: 8rem;
-        line-height: 8.8rem;
+        font-size: 13rem;
+        line-height: 13rem;
         width: 100%;
         margin-bottom: 60px;
     }
